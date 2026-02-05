@@ -2,7 +2,7 @@
 
 namespace Haukcode.ArtNetIdentity
 {
-    public static class FirmwareDecoder
+    public static class FirmwareVersionDecoder
     {
         /// <summary>
         /// Decodes the firmware version for known manufacturers.
@@ -15,7 +15,7 @@ namespace Haukcode.ArtNetIdentity
         {
             switch (estaCode)
             {
-                case 0x6A6B:        // JPK Systems Limited
+                case 0x6A6B:        // DMXking / JPK Systems Limited
                     return $"{firmwareVersion >> 8}.{firmwareVersion & 0xff}";
             }
 

@@ -27,24 +27,24 @@ var estaCode = 0x6A6B;
 var oem = 0x2BD2;
 short firmwareVersion = 0x0104;
 
-var manufacturer = EstaManufacturer.GetEstaName(estaCode);
-var model = ManufacturerModel.GetModelName(estaCode, oem);
-var firmware = FirmwareDecoder.GetFirmwareVersion(estaCode, oem, firmwareVersion);
+var manufacturer = Manufacturer.FromEstaCode(estaCode);
+var model = DeviceModel.FromEstaAndOem(estaCode, oem);
+var firmware = FirmwareVersionDecoder.GetFirmwareVersion(estaCode, oem, firmwareVersion);
 ```
 
 All methods return `null` when the value is unknown or unsupported.
 
 ## API
 
-### `EstaManufacturer.GetEstaName(int estaCode)`
+### `Manufacturer.FromEstaCode(int estaCode)`
 
 Returns the manufacturer name for the given ESTA manufacturer ID. The list is imported from the official ESTA manufacturer ID registry.
 
-### `ManufacturerModel.GetModelName(int estaCode, int oem)`
+### `DeviceModel.FromEstaAndOem(int estaCode, int oem)`
 
 Returns a model name for the combination of ESTA manufacturer ID and OEM code, when known.
 
-### `FirmwareDecoder.GetFirmwareVersion(int estaCode, int oem, short firmwareVersion)`
+### `FirmwareVersionDecoder.GetFirmwareVersion(int estaCode, int oem, short firmwareVersion)`
 
 Returns a decoded firmware version string for manufacturers with a known firmware schema. Returns `null` when not supported.
 
