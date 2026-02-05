@@ -8,6 +8,14 @@ namespace Haukcode.ArtNetIdentity.Lookup
         {
             switch (estaCode)
             {
+                case 0x454E:        // ENTTEC Pty Ltd
+                    switch (oem)
+                    {
+                        case 400:
+                            return new DeviceModel("ENTTEC", "S-PLAY SP1-1");
+                    }
+                    break;
+
                 case 0x6A6B:        // DMXking / JPK Systems Limited
                     switch (oem)
                     {
