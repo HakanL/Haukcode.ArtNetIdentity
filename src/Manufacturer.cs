@@ -36,10 +36,5 @@ namespace Haukcode.ArtNetIdentity
         {
             return EstaManufacturer.GetEstaName(estaCode);
         }
-
-        public static DeviceModel? FromEstaAndOem(int estaCode, int oem)
-        {
-            return ManufacturerModel.GetDeviceModel(estaCode, oem);
-        }
     }
 }
