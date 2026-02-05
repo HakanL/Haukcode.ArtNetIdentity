@@ -9,12 +9,12 @@
     <Copyright>(C) Copyright 2026 Hakan Lindestaf</Copyright>
     <PackageProjectUrl>https://github.com/HakanL/Haukcode.ArtNetIdentity</PackageProjectUrl>
     <Authors>Hakan Lindestaf</Authors>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>README.nuget.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\README.md">
+    <None Include="..\README.nuget.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
