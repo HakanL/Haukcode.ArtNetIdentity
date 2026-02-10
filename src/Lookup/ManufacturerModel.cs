@@ -25,6 +25,9 @@ namespace Haukcode.ArtNetIdentity.Lookup
                         case 0x2BD3:
                             return new DeviceModel("DMXking", "LeDMX2 MAX");
 
+                        case 0x2BF2:
+                            return new DeviceModel("DMXking", "eDMX2 MAX");
+
                         case 0x2BF3:
                             return new DeviceModel("DMXking", "eDMX1 MAX");
 
