@@ -34,6 +34,9 @@ namespace Haukcode.ArtNetIdentity.Lookup
                         case 0x096C:
                             return new DeviceModel("DMXking", "LeDMX4 PRO");
 
+                        case 0x096B:
+                            return new DeviceModel("DMXking", "eDMX4 PRO DIN");
+
                         case 0x0968:
                             return new DeviceModel("DMXking", "eDMX4 PRO");
                     }
