@@ -11,7 +11,7 @@ namespace Haukcode.ArtNetIdentity
         /// <param name="oem">OEM code (not relevant for all manufacturers as they may use the same firmware version schema for all their models</param>
         /// <param name="firmwareVersion">The firmware version field in the ArtPollReply packet</param>
         /// <returns>String representation of the firmware version, or null if unsupported/unknown</returns>
-        public static string? GetFirmwareVersion(int estaCode, int oem, short firmwareVersion)
+        public static string? GetFirmwareVersion(int estaCode, int oem, ushort firmwareVersion)
         {
             switch (estaCode)
             {
