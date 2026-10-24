@@ -56,6 +56,10 @@ Returns a decoded firmware version string for manufacturers with a known firmwar
 
 - ESTA manufacturer registry: https://tsp.esta.org/tsp/working_groups/CP/mfctrIDs.php
 
+## Used in production
+
+This library is used in [DMX Core 100](https://dmxcore.com), a DMX lighting controller for permanent installations that runs on Windows, macOS and Linux, or on its own touchscreen hardware. There it names the manufacturer, model and firmware version of the Art-Net nodes it discovers.
+
 ## Contributing
 
 Issues and pull requests are welcome. Please include data sources when adding new manufacturer, model, or firmware mappings.
